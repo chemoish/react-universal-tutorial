@@ -1,0 +1,10 @@
+{
+  "name": "2-add-routing",
+  "version": "0.0.0",
+  "description": "Get started with React and React Router.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carey Hinoki <carey.hinoki@gmail.com> (http://www.careyhinoki.me/)",
+  "license": "MIT"
+}
