@@ -1,0 +1,19 @@
+{
+  "name": "react-universal-tutorial",
+  "version": "0.0.0",
+  "description": "Get started with React, React Router, Redux, and Universalism.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemoish/react-universal-tutorial.git"
+  },
+  "author": "Carey Hinoki <carey.hinoki@gmail.com> (http://www.careyhinoki.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chemoish/react-universal-tutorial/issues"
+  },
+  "homepage": "https://github.com/chemoish/react-universal-tutorial#readme"
+}
