@@ -33,7 +33,7 @@ npm start
 
 ## Summary
 
-Here are a summary of starter kits and documentation I went through when deciphering this puzzle.
+Here is a summary of starter kits and documentation I went through when deciphering this puzzle.
 
 **NOTE:** May become instantaneously out of date.<sup>3.</sup>
 
@@ -44,14 +44,14 @@ https://github.com/RickWong/react-isomorphic-starterkit
 - Yes isomorphic
 - Yes HMR server
 
-### Webpack + server (koa) + react-router + redux + redux-simple-router
+### Webpack middleware + server (koa) + react-router + redux + redux-simple-router
 
 https://github.com/davezuko/react-redux-starter-kit
 
 - Testing
 - No isomorphic
 
-### Webpack + server (express) + react-router + redux + redux-router
+### Webpack middleware + server (express) + react-router + redux + redux-router
 
 https://github.com/erikras/react-redux-universal-hot-example
 
@@ -59,7 +59,7 @@ https://github.com/erikras/react-redux-universal-hot-example
 - Yes isomorphic
 - Yes HMR server (Not sure how—webpack-isomorphic-tools?)
 
-### Webpack + server (express) + react-router + redux + redux-simple-router
+### Webpack middleware + server (express) + react-router + redux + redux-simple-router
 
 https://github.com/jlongster/react-redux-universal-hot-example
 
@@ -68,7 +68,7 @@ https://github.com/jlongster/react-redux-universal-hot-example
 - Yes HMR server (Not sure how—webpack-isomorphic-tools?)
 - Fork of erikras
 
-### Webpack middleware (express) + redux
+### Webpack middleware + server (express) + redux
 
 https://github.com/rackt/redux/tree/master/examples/universal
 
