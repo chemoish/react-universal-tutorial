@@ -1,0 +1,10 @@
+{
+  "name": "1-add-react",
+  "version": "0.0.0",
+  "description": "Get started with React.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carey Hinoki <carey.hinoki@gmail.com> (http://www.careyhinoki.me/)",
+  "license": "MIT"
+}
