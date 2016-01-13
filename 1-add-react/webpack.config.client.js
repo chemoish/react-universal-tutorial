@@ -15,6 +15,13 @@ module.exports = {
   },
 
   module: {
+    preLoaders: [{
+      // https://github.com/MoOx/eslint-loader
+      exclude: /node_modules/,
+      loader:  'eslint-loader',
+      test:    /\.jsx?/
+    }],
+
     loaders: [{
       // https://github.com/webpack/file-loader
       exclude: /node_modules/,
