@@ -39,18 +39,18 @@ npm install babel-plugin-react-transform react-transform-hmr -D
 npm install file-loader -D
 ```
 
-### Setup Webpack Build
+### Setup Webpack build
 
 …
 
 - Create Webpack configuration: `./webpack.config.client.js`
-- Create `index.html`
+- Create `./src/index.html`
 - Create React root: `./src/client.js`
 - Create layout: `./src/layout/index.js`
 - Create view: `./src/view/home.js`
 - Configure `package.json`
 
-### Setup Webpack Server
+### Setup Webpack Dev Server
 
 …
 
@@ -67,5 +67,5 @@ npm install eslint eslint-loader eslint-plugin-react -D
 
 …
 
-- Create ESLint configuration: `./eslintrc`
+- Create ESLint configuration: `./.eslintrc`
 - Configure `./webpack.config.client.js`
