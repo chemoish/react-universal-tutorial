@@ -4,10 +4,10 @@ This will get you setup with a client-side only React project with Hot Module Re
 
 ## Features
 
-- Babel
-- ESLint
-- React
-- Webpack
+- [Babel](https://babeljs.io/)
+- [ESLint](http://eslint.org/)
+- [React](https://facebook.github.io/react/)
+- [Webpack](https://webpack.github.io/)
 
 ## Getting Started
 

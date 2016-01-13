@@ -12,12 +12,12 @@ The overarching goal of this repository is to provide some basic, digestible, le
 
 ## Features
 
-- Babel
-- ESLint
-- React
-- React Router
-- Redux
-- Webpack
+- [Babel](https://babeljs.io/)
+- [ESLint](http://eslint.org/)
+- [React](https://facebook.github.io/react/)
+- [React Router](https://github.com/rackt/react-router)
+- [Redux](http://redux.js.org/)
+- [Webpack](https://webpack.github.io/)
 
 ## Getting Started
 

@@ -4,12 +4,12 @@ This will get you setup with a client-side only React, React Routing, and Redux 
 
 ## Features
 
-- Babel
-- ESLint
-- React
-- React Router
-- Redux
-- Webpack
+- [Babel](https://babeljs.io/)
+- [ESLint](http://eslint.org/)
+- [React](https://facebook.github.io/react/)
+- [React Router](https://github.com/rackt/react-router)
+- [Redux](http://redux.js.org/)
+- [Webpack](https://webpack.github.io/)
 
 ## Getting Started
 
