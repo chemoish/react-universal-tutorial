@@ -23,7 +23,7 @@ config.module.postLoaders = [{
       'react'
     ],
 
-    // https://github.com/gaearon/babel-plugin-react-transform
+    // NOTE: https://github.com/gaearon/babel-plugin-react-transform
     env: {
       development: {
         plugins: [

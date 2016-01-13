@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import * as counterAction from './action/counter-action';
 
-// http://rackt.github.io/redux/docs/recipes/WritingTests.html
+// NOTE: http://rackt.github.io/redux/docs/recipes/WritingTests.html
 export class Counter extends Component {
   render() {
     return (

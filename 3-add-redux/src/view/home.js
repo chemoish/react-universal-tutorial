@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Counter from 'component/counter';
 
-// http://rackt.github.io/redux/docs/recipes/WritingTests.html
+// NOTE: http://rackt.github.io/redux/docs/recipes/WritingTests.html
 export class Home extends Component {
   render() {
     return (
