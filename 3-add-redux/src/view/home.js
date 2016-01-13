@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import Counter from 'component/counter';
 
-export default class Home extends Component {
+// http://rackt.github.io/redux/docs/recipes/WritingTests.html
+export class Home extends Component {
   render() {
     return (
       <div>
@@ -13,3 +14,5 @@ export default class Home extends Component {
     );
   }
 }
+
+export default Home;
