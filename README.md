@@ -6,7 +6,7 @@ The overarching goal of this repository is to provide some basic, digestible, le
 
 ## Goals
 
-- Keep it simple
+- Keep it simple<sup>3.</sup>
 - Understand design decisions
 - Learn
 
@@ -33,75 +33,11 @@ npm start
 
 ## Summary
 
-Here is a summary of starter kits and documentation I went through when deciphering this puzzle.
+So you probably are sitting there with your head in your hands… and you have 20 tabs open. I am so very sorry, but this is the current state of web. Hopefully, as you go through each step, look through each folder, you will slowly gain more insight to where we find ourselves today.
 
-**NOTE:** May become instantaneously out of date.<sup>3.</sup>
+After you slowly demystify Webpack, Babel, and the like, building components will become more predictable/enjoyable.
 
-### Webpack + server (koa) + react-router
-
-https://github.com/RickWong/react-isomorphic-starterkit
-
-- Yes isomorphic
-- Yes HMR server
-
-### Webpack middleware + server (koa) + react-router + redux + redux-simple-router
-
-https://github.com/davezuko/react-redux-starter-kit
-
-- Testing
-- No isomorphic
-
-### Webpack middleware + server (express) + react-router + redux + redux-router
-
-https://github.com/erikras/react-redux-universal-hot-example
-
-- Testing
-- Yes isomorphic
-- Yes HMR server (Not sure how—webpack-isomorphic-tools?)
-
-### Webpack middleware + server (express) + react-router + redux + redux-simple-router
-
-https://github.com/jlongster/react-redux-universal-hot-example
-
-- Testing
-- Yes isomorphic
-- Yes HMR server (Not sure how—webpack-isomorphic-tools?)
-- Fork of erikras
-
-### Webpack middleware + server (express) + redux
-
-https://github.com/rackt/redux/tree/master/examples/universal
-
-- Yes isomorphic
-- No HMR server
-
-### Webpack + server (express)
-
-http://jlongster.com/Backend-Apps-with-Webpack--Part-I
-http://jlongster.com/Backend-Apps-with-Webpack--Part-II
-http://jlongster.com/Backend-Apps-with-Webpack--Part-III
-
-https://github.com/jlongster/backend-with-webpack
-
-### Webpack + HMR server (fake server) [For learning only—if using HMR React]
-
-https://github.com/webpack/hot-node-example
-
-### Webpack + HMR [For Learning]
-
-https://github.com/webpack/docs/wiki/hot-module-replacement
-
----
-
-### Express
-
-#### Https
-
-https://nodejs.org/api/https.html#https_https_createserver_options_requestlistener
-
-#### SSL certification and private key
-
-http://stackoverflow.com/a/12907165/1438446
+And if this wasn't enough bleeds for you… Please check out the [SUMMARY](https://github.com/chemoish/react-universal-tutorial/blob/master/SUMMARY.md).
 
 ## Troubleshooting
 
@@ -111,4 +47,4 @@ http://stackoverflow.com/a/12907165/1438446
 
 1. Instead of your mind imploding—http://i.imgur.com/sg017lt.gif
 1. Some ludicrous number—http://i.imgur.com/RCsyMvx.gif
-1. http://blog.codinghorror.com/everything-you-know-will-be-obsolete-in-five-years/
+1. YAGNI, KISS, DRY, another dumb acronym, etc.—https://media.giphy.com/media/xTiTnpHkLq7IixxXjO/giphy.gif
