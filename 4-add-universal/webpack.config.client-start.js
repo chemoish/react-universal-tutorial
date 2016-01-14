@@ -20,6 +20,13 @@ config.entry.index.unshift(
 config.output.publicPath = 'https://' + hostname + ':' + port + '/client';
 
 config.plugins = [
+  new webpack.DefinePlugin({
+    __CLIENT__:     true,
+    __SERVER__:     false,
+    __PRODUCTION__: false,
+    __DEV__:        true
+  }),
+
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NoErrorsPlugin()
 ];

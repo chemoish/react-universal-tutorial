@@ -19,7 +19,7 @@ const hostname = 'localhost';
 const port     = 8080;
 
 function getMarkup(store, render_props) {
-  const uri = 'https://localhost:8000';
+  const uri = __PRODUCTION__ ? '' : 'https://localhost:8000';
 
   const component = (
     <Provider store={store} key="provider">

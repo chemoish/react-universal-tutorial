@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
   entry:  {
@@ -11,6 +12,31 @@ module.exports = {
     filename: '[name].js',
     path:     path.join(__dirname, 'client')
   },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      __CLIENT__:     true,
+      __SERVER__:     false,
+      __PRODUCTION__: true,
+      __DEV__:        false
+    }),
+
+    // NOTE: https://github.com/gaearon/babel-plugin-react-transform#configuration
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
+
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurenceOrderPlugin(),
+
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    })
+  ],
 
   module: {
     preLoaders: [{
