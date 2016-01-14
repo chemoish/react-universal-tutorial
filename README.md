@@ -6,7 +6,7 @@ The overarching goal of this repository is to provide some basic, digestible, le
 
 ## Goals
 
-- Keep it simple (KYS—https://medium.com/@wob/the-sad-state-of-web-development-1603a861d29f)
+- Keep it simple
 - Understand design decisions
 - Learn
 
