@@ -14,8 +14,18 @@ This will get you setup with a client-side only React, React Routing, and Redux 
 ## Getting Started
 
 ```sh
+cd 3-add-redux
+
 npm install
 npm start
+
+# NOTE: Generate steps
+
+# Run to identify commits made in this step
+git log --reverse --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]%C(reset)" --decorate --date=relative .
+
+# Run to identify commits since port of 2-add-routing (d365a24)
+git log -p --reverse d365a24.. --pretty=format:"%C(yellow)%h%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]%C(reset)" --decorate --numstat .
 ```
 
 ## Summary

@@ -13,8 +13,18 @@ This will get you setup with a client-side only React and React Routing project 
 ## Getting Started
 
 ```sh
+cd 2-add-routing
+
 npm install
 npm start
+
+# NOTE: Generate steps
+
+# Run to identify commits made in this step
+git log --reverse --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]%C(reset)" --decorate --date=relative .
+
+# Run to identify commits since port of 1-add-react (ce908df)
+git log -p --reverse ce908df.. --pretty=format:"%C(yellow)%h%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]%C(reset)" --decorate --numstat .
 ```
 
 ## Summary
