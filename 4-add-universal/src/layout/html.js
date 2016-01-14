@@ -1,41 +1,49 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { renderToString } from 'react-dom/server';
 
-export class Html extends Component {
-  render() {
-    const {
-      component,
-      script,
-      state
-    } = this.props;
+export function Html(props) {
+  const {
+    component,
+    script,
+    state
+  } = props;
 
-    const content = component ? renderToString(component) : '';
+  const content = component ? renderToString(component) : '';
 
-    return (
-      <html className="no-js" lang="en">
+  return (
+    <html className="no-js" lang="en">
 
-      <head>
-        <meta charSet="utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <title>Add Universal</title>
-        <meta name="description" content="Get started with React, React Router, Redux, and Universal." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+      <meta charSet="utf-8" />
+      <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+      <title>Add Universal</title>
+      <meta name="description" content="Get started with React, React Router, Redux, and Universal." />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        {/* Place favicon.ico in the root directory */}
-      </head>
+      <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+      {/* Place favicon.ico in the root directory */}
 
-      <body>
-        <div id="root" dangerouslySetInnerHTML={{ __html: content }} />
+      {(() => {
+        if (__DEV__ === false) {
+          return false;
+        }
 
-        <script dangerouslySetInnerHTML={{ __html: `window.__INITIAL_STATE__ = ${JSON.stringify(state)};` }} />
-        <script src={script} />
-      </body>
+        return (
+          <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+        );
+      })()}
+    </head>
 
-      </html>
-    );
-  }
+    <body>
+      <div id="root" dangerouslySetInnerHTML={{ __html: content }} />
+
+      <script dangerouslySetInnerHTML={{ __html: `window.__INITIAL_STATE__ = ${JSON.stringify(state)};` }} />
+      <script src={script} />
+    </body>
+
+    </html>
+  );
 }
 
 export default Html;
