@@ -13,7 +13,7 @@ config.plugins = [
 config.module.postLoaders = [{
   exclude: /node_modules/,
   loader:  'babel-loader',
-  test:    /\.jsx?/,
+  test:    /\.jsx?$/,
 
   query: {
     cacheDirectory: true,

@@ -19,7 +19,7 @@ module.exports = {
       // NOTE: https://github.com/MoOx/eslint-loader
       exclude: /node_modules/,
       loader:  'eslint-loader',
-      test:    /\.jsx?/
+      test:    /\.jsx?$/
     }],
 
     loaders: [{
@@ -33,7 +33,7 @@ module.exports = {
       // NOTE: https://github.com/babel/babel-loader
       exclude: /node_modules/,
       loader:  'babel-loader',
-      test:    /\.jsx?/,
+      test:    /\.jsx?$/,
 
       query: {
         presets: [
