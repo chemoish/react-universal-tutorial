@@ -1,4 +1,6 @@
 import express from 'express';
+import fs from 'fs';
+import https from 'https';
 import React from 'react';
 
 import { match, RoutingContext } from 'react-router';
@@ -13,7 +15,7 @@ const hostname = 'localhost';
 const port     = 8080;
 
 function getMarkup(store, render_props) {
-  const uri = 'http://localhost:8000';
+  const uri = 'https://localhost:8000';
 
   const component = renderToString(
     <Provider store={store} key="provider">
@@ -70,10 +72,15 @@ app.use(function (req, res) {
   });
 });
 
-app.listen(port, function (error) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.info(`==> 🌎  Open up http://${hostname}:${port}/ in your browser.`);
-  }
-});
+// SEE: http://stackoverflow.com/questions/12871565/how-to-create-pem-files-for-https-web-server/12907165#12907165
+https.createServer({
+  key: fs.readFileSync('conf/key.pem'),
+  cert: fs.readFileSync('conf/cert.pem')
+}, app)
+  .listen(port, function (error) {
+    if (error) {
+      console.error(error);
+    } else {
+      console.info(`==> 🌎  Open up https://${hostname}:${port}/ in your browser.`);
+    }
+  });
