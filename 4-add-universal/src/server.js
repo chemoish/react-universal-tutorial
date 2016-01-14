@@ -8,7 +8,9 @@ import { Provider } from 'react-redux';
 import { renderToString } from 'react-dom/server';
 
 import configureStore from './store/configure-store';
-import Route from './route';
+import RouteContainer from './route';
+
+let Route = RouteContainer;
 
 const app      = express();
 const hostname = 'localhost';
@@ -84,3 +86,14 @@ https.createServer({
       console.info(`==> 🌎  Open up https://${hostname}:${port}/ in your browser.`);
     }
   });
+
+if (module.hot) {
+  console.info('[HMR] Server is listening…');
+
+
+  module.hot.accept('./route', function () {
+    console.info('[HMR] Patching Route');
+
+    Route = require('./route').default;
+  });
+}
