@@ -1,15 +1,19 @@
+var fs = require('fs');
 var path = require('path');
 
 module.exports = {
-  entry:  {
+  cache:  false,
+  target: 'node',
+
+  entry: {
     index: [
-      './src/client'
+      './src/server'
     ]
   },
 
   output: {
     filename: '[name].js',
-    path:     path.join(__dirname, 'client')
+    path:     path.join(__dirname, 'server')
   },
 
   module: {
@@ -34,6 +38,13 @@ module.exports = {
       }
     }]
   },
+
+  // SEE: http://jlongster.com/Backend-Apps-with-Webpack--Part-I
+  externals: fs.readdirSync('node_modules').reduce(function (accumulator, module) {
+    accumulator[module] = 'commonjs ' + module;
+
+    return accumulator;
+  }, {}),
 
   // NOTE: https://webpack.github.io/docs/configuration.html#resolve
   resolve: {

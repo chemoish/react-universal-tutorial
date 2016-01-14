@@ -2,12 +2,26 @@ var webpack = require('webpack');
 
 var config = require('./webpack.config.client');
 
+var hostname = 'localhost';
+var port     = 8000;
+
 config.cache   = true;
 config.debug   = true;
 config.devtool = 'inline-source-map';
 
+config.entry.index.unshift(
+  // http://webpack.github.io/docs/webpack-dev-server.html#inline-mode
+  'webpack-dev-server/client?http://' + hostname + ':' + port,
+
+  // http://webpack.github.io/docs/webpack-dev-server.html#hot-module-replacement
+  'webpack/hot/only-dev-server'
+);
+
+config.output.publicPath = 'http://' + hostname + ':' + port + '/client';
+
 config.plugins = [
   new webpack.HotModuleReplacementPlugin(),
+  new webpack.NoErrorsPlugin()
 ];
 
 config.module.postLoaders = [{
@@ -47,9 +61,10 @@ config.module.postLoaders = [{
 }];
 
 config.devServer = {
-  historyApiFallback: true,
-  hot:                true,
-  inline:             true
+  hot:    true,
+  inline: true,
+  noInfo: true,
+  port:   port
 };
 
 module.exports = config;
