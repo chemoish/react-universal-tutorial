@@ -14,6 +14,7 @@ The overarching goal of this repository is to provide some basic, digestible, le
 
 - [Babel](https://babeljs.io/)
 - [ESLint](http://eslint.org/)
+- [EditorConfig](http://editorconfig.org/)
 - [Express](http://expressjs.com/)
 - [React](https://facebook.github.io/react/)
 - [React Router](https://github.com/rackt/react-router)

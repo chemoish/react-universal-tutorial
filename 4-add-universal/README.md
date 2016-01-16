@@ -5,8 +5,9 @@ This will get you setup with a universal React, React Routing, and Redux project
 ## Features
 
 - [Babel](https://babeljs.io/)
-- [Express](http://expressjs.com/)
+- [EditorConfig](http://editorconfig.org/)
 - [ESLint](http://eslint.org/)
+- [Express](http://expressjs.com/)
 - [React](https://facebook.github.io/react/)
 - [React Router](https://github.com/rackt/react-router)
 - [Redux](http://redux.js.org/)

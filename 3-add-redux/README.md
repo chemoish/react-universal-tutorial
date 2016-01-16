@@ -5,6 +5,7 @@ This will get you setup with a client-side only React, React Routing, and Redux 
 ## Features
 
 - [Babel](https://babeljs.io/)
+- [EditorConfig](http://editorconfig.org/)
 - [ESLint](http://eslint.org/)
 - [React](https://facebook.github.io/react/)
 - [React Router](https://github.com/rackt/react-router)
