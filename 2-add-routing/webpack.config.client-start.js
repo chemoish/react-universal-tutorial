@@ -47,8 +47,9 @@ config.module.postLoaders = [{
 }];
 
 config.devServer = {
-  hot:    true,
-  inline: true
+  historyApiFallback: true,
+  hot:                true,
+  inline:             true
 };
 
 module.exports = config;

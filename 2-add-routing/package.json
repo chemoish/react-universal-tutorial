@@ -10,8 +10,10 @@
   "author": "Carey Hinoki <carey.hinoki@gmail.com> (http://www.careyhinoki.me/)",
   "license": "MIT",
   "dependencies": {
+    "history": "^1.17.0",
     "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react-dom": "^0.14.6",
+    "react-router": "^1.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",

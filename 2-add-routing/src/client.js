@@ -2,8 +2,18 @@ import 'babel-polyfill';
 
 import React from 'react';
 
+import { createHistory } from 'history';
 import { render } from 'react-dom';
+import { Router } from 'react-router';
 
-import Layout from './layout';
+import routes from './route';
 
-render(<Layout />, document.getElementById('root'));
+const history = createHistory();
+
+const component = (
+  <Router history={history}>
+    {routes}
+  </Router>
+);
+
+render(component, document.getElementById('root'));
