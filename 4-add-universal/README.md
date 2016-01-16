@@ -26,8 +26,8 @@ npm start
 # Run to identify commits made in this step
 git log --reverse --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]%C(reset)" --decorate --date=relative .
 
-# Run to identify commits since port of 3-add-redux (63551fc)
-git log -p --reverse 63551fc.. --pretty=format:"%C(yellow)%h%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]%C(reset)" --decorate --numstat .
+# Run to identify commits since port of 3-add-redux (6e7d1e6)
+git log -p --reverse 6e7d1e6.. --pretty=format:"%C(yellow)%h%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]%C(reset)" --decorate --numstat .
 ```
 
 ## Summary

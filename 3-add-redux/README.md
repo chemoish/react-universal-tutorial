@@ -25,8 +25,8 @@ npm start
 # Run to identify commits made in this step
 git log --reverse --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]%C(reset)" --decorate --date=relative .
 
-# Run to identify commits since port of 2-add-routing (d365a24)
-git log -p --reverse d365a24.. --pretty=format:"%C(yellow)%h%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]%C(reset)" --decorate --numstat .
+# Run to identify commits since port of 2-add-routing (f30525e)
+git log -p --reverse f30525e.. --pretty=format:"%C(yellow)%h%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]%C(reset)" --decorate --numstat .
 ```
 
 ## Summary
