@@ -23,6 +23,8 @@ The overarching goal of this repository is to provide some basic, digestible, le
 
 ## Getting Started
 
+Install [node.js](https://nodejs.org/).
+
 ```sh
 git clone https://github.com/chemoish/react-universal-tutorial.git
 cd react-universal-tutorial
