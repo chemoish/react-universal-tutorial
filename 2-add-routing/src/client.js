@@ -7,13 +7,13 @@ import { createHistory } from 'history';
 import { render } from 'react-dom';
 import { Router } from 'react-router';
 
-import routes from './route';
+import Route from './route';
 
 const history = createHistory();
 
 const component = (
   <Router history={history}>
-    {routes}
+    {Route}
   </Router>
 );
 

@@ -10,7 +10,7 @@ import { Router } from 'react-router';
 import { syncReduxAndRouter } from 'redux-simple-router';
 
 import configureStore from './store/configure-store';
-import routes from './route';
+import Route from './route';
 
 const history = createHistory();
 const store = configureStore();
@@ -19,9 +19,9 @@ syncReduxAndRouter(history, store);
 
 const component = (
   <Provider store={store} key="provider">
-      <Router history={history}>
-        {routes}
-      </Router>
+    <Router history={history}>
+      {Route}
+    </Router>
   </Provider>
 );
 
