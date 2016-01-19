@@ -1,3 +1,4 @@
+// This will emulate a full ES6 environment.
 import 'babel-polyfill';
 
 import React from 'react';
