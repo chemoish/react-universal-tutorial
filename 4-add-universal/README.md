@@ -1,6 +1,6 @@
 # 4. Add Universal
 
-This will get you setup with a universal React, React Routing, and Redux project with Hot Module Reloading (Useful).
+This will get you setup with a universal React, React Routing, and Redux project with Hot Module Replacement (Useful).
 
 ## Features
 
@@ -72,13 +72,13 @@ npm install https -D
 - Reconfigure client Webpack Dev Server configuration: `./webpack.config.client-start.js`
 - Update server: `./src/server.js`
 
-### Setup Hot Module Reloading for routing on server
+### Setup Hot Module Replacement for routing on server
 
 …
 
 - Update server: `./src/server.js`
 
-### Setup Hot Module Reloading for html on server
+### Setup Hot Module Replacement for html on server
 
 …
 

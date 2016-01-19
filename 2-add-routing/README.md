@@ -1,6 +1,6 @@
 # 2. Add Routing
 
-This will get you setup with a client-side only React and React Routing project with Hot Module Reloading (More useful).
+This will get you setup with a client-side only React and React Routing project with Hot Module Replacement (More useful).
 
 ## Features
 

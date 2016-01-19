@@ -1,6 +1,6 @@
 # 1. Add React
 
-This will get you setup with a client-side only React project with Hot Module Reloading (Not terribly useful).
+This will get you setup with a client-side only React project with Hot Module Replacement (Not terribly useful).
 
 ## Features
 
