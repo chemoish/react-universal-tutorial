@@ -44,8 +44,8 @@ https://github.com/rackt/redux/tree/master/examples/universal
 
 ### Webpack + server (express)
 
-http://jlongster.com/Backend-Apps-with-Webpack--Part-I
-http://jlongster.com/Backend-Apps-with-Webpack--Part-II
+http://jlongster.com/Backend-Apps-with-Webpack--Part-I  
+http://jlongster.com/Backend-Apps-with-Webpack--Part-II  
 http://jlongster.com/Backend-Apps-with-Webpack--Part-III
 
 https://github.com/jlongster/backend-with-webpack
